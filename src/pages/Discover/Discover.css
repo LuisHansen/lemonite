@@ -1,0 +1,52 @@
+.discover {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+.discover__header { text-align: center; margin-bottom: 40px; }
+.discover__header h1 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+.discover__header p { color: var(--color-muted); }
+
+.discover__filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.discover__filter-btn {
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1.5px solid #E5E7EB;
+  background: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--color-muted);
+  transition: all var(--transition);
+  font-family: inherit;
+}
+.discover__filter-btn:hover,
+.discover__filter-btn--active {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: #EEF4FF;
+}
+
+.discover__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skill-card__header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.skill-card__avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+.skill-card__header strong { font-size: 0.9rem; color: var(--color-dark); }
+.skill-card__seeks { font-size: 0.8rem; color: var(--color-muted); }
+.skill-card__title { font-size: 1.1rem; font-weight: 700; color: var(--color-dark); margin-bottom: 16px; }
